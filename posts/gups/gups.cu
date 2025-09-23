@@ -494,7 +494,6 @@ int main(int argc, char* argv[])
         accesses_per_elem,
         repeats);
   } else {
-    // For shared memory tests, report the actual shared memory used
     size_t total_shmem = grid * n_shmem * sizeof(benchtype);
     printf(
         "Table size = %zu (%lf MB.) [shared memory: %zu bytes per block x %zu blocks]\n"
